@@ -6,7 +6,7 @@ requires = [
 build-backend = "setuptools.build_meta"
 
 [tool.black]
-extend-exclude = "(_pb2.py$|_pb2_grpc.py$)"
+extend-exclude = "(_pb2.py$|_grpc.py$)"
 # We don't care about line length for generated code
 line-length = 10000
 
@@ -30,5 +30,5 @@ include = [
 ]
 exclude = [
     "**/*_pb2.py",
-    "**/*_pb2_grpc.py"
+    "**/*_grpc.py"
 ]
